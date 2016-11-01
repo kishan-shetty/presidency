@@ -12,14 +12,63 @@
 	<body>
 		
 		<div class="container main">
-			
-			<img src="http://presidencyuniversity.in/wp-content/uploads/2015/02/logo-trans.png">
 		
 		<h1>Presidency Portal</h1>
 		<h2>Send emails to students</h2>
 		
 		<div class="contents">
 			
+            
+            <form class="form" method="post" action="send_attachments.php" enctype="multipart/form-data">
+                <div class="foram">
+                    
+                
+                <label>
+                
+                    <span>Section</span>
+                    <br>
+                
+                    <input class="saxan" type="number" placeholder="0" name="s_section" />
+                    
+                </label>
+                        <br><br>         
+                <label>        
+                   
+                <span>Subject</span> 
+                   <br>
+                   
+                    <input class="saxan" type="text" placeholder="Email subject" name="s_name" />
+                    
+                </label>
+                   <br><br>
+                <label>
+                    
+                <span>Message</span>
+                    <br>
+                    
+                    <textarea name="s_message"></textarea>
+                    
+                </label>
+                        <br><br>
+                <label>
+                  
+                <span>Attachments</span>
+                   <br>
+                   
+                    <input class="saxan" type="file" name="file[]" multiple="multiple" />                    
+                   
+                </label>
+                    <br><br>
+                <label>
+                <input id="submit" type="submit" value="Send" />
+                </label>
+                    
+                </div>
+            </form>
+            
+            
+            
+<!--
 			<div class="row">
 				<div class="col-md-6">
 					<a class="btn btn-default butt" href="#" role="button">First year students</a>
@@ -28,12 +77,14 @@
 					<a class="btn btn-default butt" href="#" role="button">Second year students</a>
 				</div>
 			</div>
+-->
 			
 		</div>
 		
 		</div>
 		<footer>
-		  <div class="container">
+			
+            <div class="container">
               <div class="row">
                   <div class="col-md-6 foo-content">
             Crafted with <big>&hearts;</big> by <a href="http://www.kishan.co.in" target="_blank">Kishan</a>
@@ -43,6 +94,7 @@
                   </div>
               </div>
             </div>
+            
 		</footer>
 		
 		
